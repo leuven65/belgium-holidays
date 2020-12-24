@@ -1,0 +1,13 @@
+# -*- coding: utf-8; -*-
+#+TITLE: belgium-holidays
+#+AUTHOR: Jian Wang
+#+DATE: 2020-12-24
+
+Define Belgium public holidays for Emacs calendar.
+
+* Configuration
+#+begin_src emacs-lisp
+  (require 'belgium-holidays)
+  (setq calendar-holidays
+        (append calendar-holidays belgium-holidays))
+#+end_src
